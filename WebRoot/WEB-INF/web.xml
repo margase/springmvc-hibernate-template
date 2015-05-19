@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 	
-	<display-name>IOS-MDM-Server</display-name>
+	<display-name>SpringMVC</display-name>
 	
 	<!-- Spring 配置 -->
 	<context-param>
@@ -58,6 +58,18 @@
         <servlet-name>springmvc</servlet-name>  
     </filter-mapping>  
     
+    
+    <!-- SpringMVC 跨域访问 -->
+    <filter>
+		<filter-name>cors</filter-name>
+		<filter-class>com.iie.common.filters.CorsFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>cors</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- End SpringMVC 跨域访问 -->
+	
     <welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>

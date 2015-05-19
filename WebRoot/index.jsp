@@ -18,6 +18,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<!-- Bootstrap -->
+	<link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
   </head>
   
   <body>
